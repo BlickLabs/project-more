@@ -4,7 +4,6 @@ $('.section_form-carousel').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
-  infinite: false,
   // adaptiveHeight: true,
   // variableWidth: true,
   focusOnSelect: false,
