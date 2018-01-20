@@ -27,14 +27,34 @@ label.error
     background: #3780AB
 
 .section_one
-  height 100vh
-  background-image url('../img/backgrounds/section_1.jpg')
+  height 111vh
   background-size cover
   background-position center
+  position relative
+
+.homepage-cover-container
+  position absolute
+  width 60%
+  right 5%
+  top 85px
+
+.homepage-cover-img
+  width 100%
+  height auto
+
+.homepage-cover-decorator
+  background-color #f0f0f0
+  bottom -40px
+  height 210px
+  left -88px
+  position absolute
+  width 639px
+  z-index -1
+
 .br-show-m
   display none
 .section_one-wrapper
-  height 100vh
+  height 111vh
   max-width 1065px
   center-block()
   position relative
@@ -54,9 +74,9 @@ label.error
   height 300px
   display flex
   flex-flow column wrap
-  top 50%
-  left 50%
-  transform translate(-50%, -50%)
+  top 27%
+  left -8%
+  //transform translate(-50%, -50%)
 .section_one-title-wrapper
   display flex
   // margin-left 20px
@@ -66,18 +86,18 @@ label.error
   width 50%
   position absolute
   top 0
-  left 50%
-  transform translateX(-26rem)
+  left 12%
+  //transform translateX(-26rem)
 
 .section_one-title
-  font-size remify(70)
-  color #fff
+  font-size remify(69px)
+  color $moreBlack
   letter-spacing -1.7px
   line-height 1.14
   margin 0
 
 .blue-text
-  color $blueStandar
+  color $moreBlack
 
 .section_one-description-wrapper
   display flex
@@ -87,15 +107,16 @@ label.error
 
 .section_one-description-container
   // max-width 496px
-  width 50%
+  max-width 445px
   position absolute
   bottom 0
-  left 50%
+  left 12%
 
 .section_one-description
-  font-size remify(21)
-  color #fff
-  line-height 1.35
+  font-size remify(20)
+  color $moreBlack
+  letter-spacing 0px
+  line-height 27px
   text-align left
   margin 0
 
@@ -624,9 +645,6 @@ label.error
   
   .section_one-blue-divider
     height 7rem
-
-  .section_one-title-container
-    transform translateX(-75%)
   
   .section_one-description-container
     bottom 10%
@@ -676,7 +694,7 @@ label.error
   .section_one-title-wrapper
     margin 0 0 0 25px
   .section_one-title-container
-    transform translateX(-32%)
+    //transform translateX(-32%)
     width 100%
   .section_one-description-container
     width 50%
@@ -795,12 +813,11 @@ label.error
   .section_one-container
     height 100vh
   .section_one-description-container
-    left 50%
+    left 12%
     bottom 10%
     width 85%
   .section_one-title-container
-    left 50%
-    transform translateX(-95%)
+    left 12%
   
   .section_one-blue-divider 
     height 7rem
@@ -809,18 +826,26 @@ label.error
   .section_one-blue-divider 
     height 5.5rem
   .section_one-container
-    height 75vh
+    height 120vh
+
+  .section_one-text-wrapper
+    top 48%
   
   .section_one-description-container
-    left 30px
+    left 12%
     bottom 15%
     width 85%
 
   .section_one-title-container
-    left 30px
+    left 12%
     top 3.5rem
     transform translateX(0)
   
   .section_services-tabcontent
     img
       width 110px
+
+  .homepage-cover-container
+    left 12%
+    right 0
+    width 100%
