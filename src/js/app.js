@@ -2,7 +2,7 @@
   var currentFile = window.location.pathname;
   var fixField;
   if (currentFile === '/' || currentFile === '/index.html'  || currentFile === '/portfolio.html' || currentFile === '/services.html' || currentFile === '/careers.html' || currentFile === '/team.html' || currentFile === '/referrals.html' || currentFile === '/quote.html' || currentFile === '/contact.html'){
-   fixField = "Please fix this field.";
+   fixField = "Please write a valid name.";
     $.extend( $.validator.messages, {
       required: "This field is mandatory.",
       remote: "Please fix this field.",
@@ -14,7 +14,7 @@
       digits: "Please write only digits.",
       equalTo: "Please write the same value again.",
       maxlength: $.validator.format( "Please write no more than {0} characters." ),
-      minlength: $.validator.format( "Please write at least {0} characters." ),
+      minlength: $.validator.format( "Please don't write at least {0} characters." ),
       rangelength: $.validator.format( "Please write a value between {0} and {1} characters long." ),
       range: $.validator.format( "Please write a value between {0} and {1}." ),
       max: $.validator.format( "Please write a value less than or equal to {0}." ),
