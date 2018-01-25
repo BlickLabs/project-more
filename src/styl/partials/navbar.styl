@@ -17,21 +17,23 @@
   -webkit-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
   -moz-box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
   box-shadow 0px 3px 8px -4px rgba(0,0,0,0.75)
+  padding-top 0
 
   // & + main
   //   padding-top 109px // Change
   
   &.active
     height 158px
-    transform translateY(0px)
-    background #ffffff00
+    //transform translateY(85px)
+    background #000
     box-shadow none
+    padding-top 97px
         
     .header-wrapper
       border-top 1px solid #fff
     
     .site-navbar__desktop-logo-container
-      transform translate(0px, -54px)
+      transform translate(444px, -90px)
     
     .site-navbar__menu
       //transform translateX(-183px)
@@ -44,7 +46,7 @@
       padding 0
     
     .site-navbar__menu-link
-      color $moreBlack
+      color #fff
       padding 0 8px 0 8px
       height 100%
       display flex
@@ -58,7 +60,7 @@
       display none
       
     .site-lang__menu-link
-      color $moreBlack
+      color #fff
     
     .site-navbar__menu-link
       &:hover
@@ -106,7 +108,7 @@
     transition opacity 0.2s ease-in-out
   
   .site-navbar__desktop-logo-top
-    width 8.9375rem  // Change
+    width 6.9375rem  // Change
     display none
     margin-top 15px
   
@@ -219,10 +221,11 @@ img[src="img/logos/more-white-mobile.png"]
     &.active
       box-shadow none
       height 158px
-      transform translateY(30px)
+      padding-top 0
+      //transform translateY(30px)
 
       .site-navbar__desktop-logo-container
-        transform translate(-25px, 0)
+        transform translate(0px, 6px)
         align-items flex-start
       
       .site-navbar__menu-trigger
@@ -231,7 +234,8 @@ img[src="img/logos/more-white-mobile.png"]
         font-size 18px // Change
 
         img
-          width 45px
+          margin-top 15px
+          width 40px
       
       .site-navbar__menu-container
         top -30px
@@ -252,7 +256,7 @@ img[src="img/logos/more-white-mobile.png"]
 
   .site-navbar__desktop-logo-container
     img
-      height remify(20) // Change
+      height remify(36) // Change
       width auto
 
   .site-navbar.active .header-wrapper
@@ -334,4 +338,4 @@ img[src="img/logos/more-white-mobile.png"]
         height 0 !important
   
   .site-navbar__desktop-logo-container
-      transform translate(0px, 0px)
+    transform translate(0px, 0px)
