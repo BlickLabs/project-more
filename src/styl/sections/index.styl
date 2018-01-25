@@ -30,6 +30,7 @@ label.error
   height 111vh
   background-size cover
   background-position center
+  margin-top 97px
   position relative
 
 .homepage-cover-container
@@ -121,13 +122,14 @@ label.error
   margin 0
 
 .section_one-blue-divider
-  width 1px
-  height 7rem
-  background-color $blueStandar
   position absolute
-  bottom 0
-  left 50%
-  transform translateX(-50%)
+  bottom 16%
+  left 0
+  //transform translateX(-50%)
+
+.arrow-to-scroll
+  height 90px
+  width auto
 
 .section_one-blue-box
   width 100%
@@ -683,6 +685,7 @@ label.error
 
   .section_one
     height 100%
+    margin 0 15px
   
   .section_one-wrapper
     display block
@@ -809,6 +812,29 @@ label.error
     background-size 100% 14%
     background-repeat no-repeat
 
+  .homepage-cover-container
+    background-image url("../img/homepage/homepage-cover.png")
+    background-position right
+    background-repeat no-repeat
+    background-size cover
+    height 400px
+    left 16%
+    right 0
+    width auto
+
+  .homepage-cover-img
+    display none
+
+  .homepage-cover-decorator
+    left -34px
+    width 100%
+
+  .section_one-text-wrapper
+    top 12%
+
+  .section_one-blue-divider
+    bottom 34%
+
 @media screen and (min-width 481px) and (max-width 640px)
   .section_one-container
     height 100vh
@@ -827,9 +853,6 @@ label.error
     height 5.5rem
   .section_one-container
     height 120vh
-
-  .section_one-text-wrapper
-    top 48%
   
   .section_one-description-container
     left 12%
@@ -844,8 +867,3 @@ label.error
   .section_services-tabcontent
     img
       width 110px
-
-  .homepage-cover-container
-    left 12%
-    right 0
-    width 100%
