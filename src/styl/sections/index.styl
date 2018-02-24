@@ -26,6 +26,10 @@ label.error
   & > .error
     background: #3780AB
 
+/*New cover section*/
+.home-cover
+  margin-top 157px
+/*En cover section*/
 .section_one
   height 111vh
   background-size cover
@@ -71,12 +75,13 @@ label.error
 
 .section_one-text-wrapper
   position absolute
-  width 100%
+  //width 100%
   height 300px
   display flex
-  flex-flow column wrap
-  top 27%
-  left -8%
+  flex-direction column
+  //flex-wrap wrap
+  top 130px
+  left 36px
   //transform translate(-50%, -50%)
 .section_one-title-wrapper
   display flex
@@ -84,10 +89,11 @@ label.error
 
 .section_one-title-container
   // max-width 522px
-  width 50%
-  position absolute
-  top 0
-  left 12%
+  margin-bottom 16px
+  max-width 426px
+  //position absolute
+  //top 0
+  //left 12%
   //transform translateX(-26rem)
 
 .section_one-title
@@ -109,7 +115,7 @@ label.error
 .section_one-description-container
   // max-width 496px
   max-width 445px
-  position absolute
+  //position absolute
   bottom 0
   left 12%
 
@@ -124,7 +130,7 @@ label.error
 .section_one-blue-divider
   position absolute
   bottom 16%
-  left 0
+  left 36px
   //transform translateX(-50%)
 
 .arrow-to-scroll
@@ -185,7 +191,7 @@ label.error
 .section_projects-container
   position relative
   width 100vw
-  padding-top 11rem
+  padding-top 4rem
   padding-bottom 5rem
   
 .section_projects-title-wrapper
@@ -333,6 +339,45 @@ label.error
     width 8rem
   background-image url('../img/c_cierralo.png')
 
+.item_project-bgd-atelier
+  img
+    width 8rem
+  background-image url('../img/portfolio/atelier-img.jpg')
+
+.item_project-bgd-ican
+  img
+    width 8rem
+  background-image url('../img/portfolio/ican-img.jpg')
+
+.item_project-bgd-fortia
+  img
+    width 8rem
+  background-image url('../img/portfolio/fortia-img.jpg')
+
+.item_project-bgd-opalo
+  img
+    width 8rem
+  background-image url('../img/portfolio/opalo-img.jpg')
+
+.item_project-bgd-loquay
+  img
+    width 8rem
+  background-image url('../img/portfolio/loquay-img.jpg')
+
+.item_project-bgd-indotsverde
+  img
+    width 8rem
+  background-image url('../img/portfolio/indotsverde-img.jpg')
+
+.item_project-bgd-estilizate
+  img
+    width 8rem
+  background-image url('../img/portfolio/estilizate-img.jpg')
+
+.item_project-bgd-kerma
+  img
+    width 8rem
+  background-image url('../img/portfolio/kerma-img.jpg')
 
 .section_projects-btn-wrapper
   total-center()
@@ -597,6 +642,9 @@ label.error
 .section_form_mobile
   display none
 
+.homepage-cover-img-mobile
+  display none
+
 @media screen and (min-width 640px) and (max-width 1024px) 
   .section_form-carousel-item 
     p
@@ -607,9 +655,6 @@ label.error
     width 80%
   
 @media screen and (max-height: 480px)
-  .section_projects-container
-    padding-top 5rem
-  
   .section_one-title-container
     top 25%
   .section_one-title
@@ -634,6 +679,27 @@ label.error
     .section_one-cicle-arrow
       width 20px
       height 20px
+
+  .homepage-cover-container
+    background-image initial
+    background-position right
+    background-repeat no-repeat
+    background-size cover
+    height 400px
+    left 16%
+    right 0
+    width auto
+
+  .homepage-cover-img
+    display none
+
+  .homepage-cover-img-mobile
+    display block
+
+  .homepage-cover-decorator
+    left -34px
+    width 100%
+    display none
 @media screen and (max-width 992px)
   .cv-form__box2 
       display none
@@ -668,9 +734,6 @@ label.error
     &.active
       &:after
         bottom -4px
-
-  
-
   
 @media screen and (max-width: 768px)
   .br-show-m
@@ -727,6 +790,9 @@ label.error
     .section_services-tabcontent-img
       width 100%
       height auto
+
+  .section_projects-container
+    padding-top 5rem
   
   .section_services-tabcontent
     padding 70px 30px 70px 35px
@@ -822,12 +888,16 @@ label.error
     right 0
     width auto
 
-  .homepage-cover-img
+  /*.homepage-cover-img
     display none
+
+  .homepage-cover-img-mobile
+    display none*/
 
   .homepage-cover-decorator
     left -34px
     width 100%
+    display none
 
   .section_one-text-wrapper
     top 12%
