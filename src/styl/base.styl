@@ -101,6 +101,21 @@ textarea
   right initial
   left 16px
 
+.show
+  &-desktop
+    display block
+
+  &-mobile
+    display none
+
+@media screen and (max-width 786px)
+  .show
+    &-desktop
+      display none
+
+    &-mobile
+      display block
+
 @import 'partials/navbar'
 
 @import 'partials/footer'
