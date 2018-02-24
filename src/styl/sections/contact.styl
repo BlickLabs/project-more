@@ -78,7 +78,7 @@
       color red
     
     input 
-      margin 0 0 3.12em
+      margin 0 0 5.12em
       border 0
       border-radius 0px
       border-bottom solid 1px #e5e5e5
@@ -110,21 +110,21 @@
 // Gray box //
 .contacto-view__form-box2 
   position absolute
+  bottom 140px
   right 10%
   display flex
   flex-direction column
   justify-content center
-  align-items center
   background-color #f6f6f6
   width 33%
-  padding 4.5em 0
+  padding 4.5em 0 4.5em 3%
   
   
   .cw-mail,
   .cw-map 
     display flex
     align-items center
-    margin 0 0 7px 0
+    margin 0 0 12px 0
      
     span 
       color #223a48
@@ -133,13 +133,14 @@
       
   
   .cw-map 
-    margin 25px 0 7px 0
+    margin 25px 0 12px 0
     span 
     font-size remify(20px)
   
   span 
     color #223a48
-    font-size remify(18px)
+    font-size remify(16px)
+    letter-spacing 1px
     
 .contact-form__button 
   display flex
@@ -174,7 +175,7 @@
 // Medium devices
 @media screen and (min-width 480px) and (max-width 767px) 
   .contacto-view__title
-    padding 100px 0 50px 40px
+    padding 120px 0 50px 40px
     width 9em
 
   .contacto-view__more-logo 
@@ -216,7 +217,7 @@
     width 100%
     bottom 0
     right 0
-    padding 4.5em 0
+    padding 4.5em 0 4.5em 3%
     .contacto-view__form-box2-container
       width auto
       margin 0 auto
@@ -227,7 +228,7 @@
   
   .contacto-view__title 
     font-size remify(39px)
-    padding 100px 0 30px 40px
+    padding 120px 0 50px 40px
     justify-content flex-start
     width 9em
   
@@ -260,7 +261,7 @@
         top -30px
       
       input 
-        margin 0 0 3.12em
+        margin 0 0 5.12em
         border-radius 0px
         border 0
         border-bottom solid 1px #e5e5e5
