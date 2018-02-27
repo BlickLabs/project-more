@@ -28,8 +28,48 @@ label.error
 
 /*New cover section*/
 .home-cover
-  margin-top 157px
+  display flex
+  justify-content flex-end
+  margin 157px 57px 0 0
+  position relative
+
+  &-img
+    height 100%
+    width 100%
+
+    &-mobile
+      display none
+
+    &-container
+      display flex
+      justify-content flex-end
+      position relative
+      width 70%
+
+  &-decorator
+    background-color #f0f0f0
+    bottom -40px
+    height 210px
+    left -88px
+    position absolute
+    width 639px
+    z-index -1
+
+  &-info
+    left 125px
+    margin 0 auto
+    max-width 1065px
+    position absolute
+    right 0
+    top 63px
+
+  &-blue-arrow
+    position absolute
+    bottom -98%
+    left 0
+
 /*En cover section*/
+
 .section_one
   height 111vh
   background-size cover
@@ -366,7 +406,7 @@ label.error
 
 .item_project-bgd-indotsverde
   img
-    width 8rem
+    width 4rem
   background-image url('../img/portfolio/indotsverde-img.jpg')
 
 .item_project-bgd-estilizate
@@ -382,6 +422,7 @@ label.error
 .section_projects-btn-wrapper
   total-center()
   flex-direction column
+
 .section-projects-carousel-arrows
   width 100px
   height 25px
@@ -414,7 +455,7 @@ label.error
 // ========== section_services ========== //
 .section_services
   background-color #efefef 
- 
+
 .section_services-container
   position relative
   max-width 1030px
@@ -472,22 +513,25 @@ label.error
 .section_services-tabcontent-wrapper
   width 100%
   total-center()
+
   .section_services-tabcontent-img
     width 50%
-    height auto
+    height 316px
+
 .shopify-wrapper
   display flex
   align-items center
   justify-content flex-start
+
 .section_services-tabcontent
-  padding 0 25px 0 30px !important
+  padding 47px 25px 47px 30px !important
   width 50%
   height 412px
   background-color $blueStandar
   color #fff 
   display flex
   flex-direction column
-  justify-content center
+  justify-content space-between
   img
     width 145px
     margin-top 15px
@@ -547,14 +591,16 @@ label.error
 .section_form-carousel
   center-block()
   width 100%
-  
+
   .slick-prev
     display none !important
 
   .slick-right
-    right 0 
+    right 0
+
 .section_form-carousel-item:first-child
   justify-content center
+
 .section_form-carousel-item
   height 7rem !important
   position relative
@@ -572,7 +618,7 @@ label.error
     font-size remify(44)
   label.error
     color #ff3636
-  
+
   input
     padding 10px
     font-size remify(17)
@@ -653,7 +699,7 @@ label.error
 @media screen and (max-width: 1030px)
   .section_one-blue-box
     width 80%
-  
+
 @media screen and (max-height: 480px)
   .section_one-title-container
     top 25%
@@ -665,13 +711,13 @@ label.error
     font-size remify(18)
   .section_one-blue-divider
     height 2.3rem !important
-  
+
   .section_one-blue-box
     height 50px
     bottom calc(-50px / 2)
   .section_one-white-divider-blue-box
     height calc(50% - 5px)
-  
+
   .section_one-cicle-circle
     width 30px
     height 30px
@@ -700,25 +746,27 @@ label.error
     left -34px
     width 100%
     display none
+
 @media screen and (max-width 992px)
   .cv-form__box2 
       display none
+
 @media screen and (min-width 768px) and (max-width 992px)
   .header-wrapper
     max-width 708px
   .site-navbar.active .site-navbar__desktop-logo-container
-    transform translate(289px, -122px)
+    transform translate(289px, -90px)
   .section_one-title
     font-size remify(52)
-  
+
   .section_one-blue-divider
     height 7rem
-  
+
   .section_one-description-container
     bottom 10%
     p
       padding-right 80px
-  
+
   .section_form-carousel-item
     height 11rem !important
     label
@@ -857,7 +905,7 @@ label.error
         position absolute
         top -20px
         right 0
-  
+
   .section_form_mobile-btn
     @extends .section_services-btn
     border none
@@ -888,12 +936,6 @@ label.error
     right 0
     width auto
 
-  /*.homepage-cover-img
-    display none
-
-  .homepage-cover-img-mobile
-    display none*/
-
   .homepage-cover-decorator
     left -34px
     width 100%
@@ -923,7 +965,7 @@ label.error
     height 5.5rem
   .section_one-container
     height 120vh
-  
+
   .section_one-description-container
     left 12%
     bottom 15%
@@ -937,3 +979,66 @@ label.error
   .section_services-tabcontent
     img
       width 110px
+
+@media screen and (max-width 420px)
+  .home-cover
+    margin 80px 18px 0 18px
+
+    &-decorator
+      display none
+
+    &-img
+      display none
+
+      &-container
+        width 100%
+
+      &-mobile
+        display block
+        height 100%
+        width 100%
+
+    &-info
+      left 18px
+      right initial
+      top 38px
+
+    &-blue-arrow
+      bottom -138px
+
+  .section_one-description
+    margin-top 15px
+
+@media screen and (min-width 421px) and (max-width 766px)
+  .home-cover
+    margin 90px 30px 0 0
+
+    &-img
+      &-container
+        width 80%
+
+    &-decorator
+      height 100px
+      left -50px
+      width 300px
+
+    &-info
+      left 48px
+      top 30px
+
+  .section_one-title
+    font-size remify(40px)
+
+  .section_one-description
+    margin-top 12px
+
+@media screen and (min-width 767px) and (max-width 900px)
+  .home-cover
+    &-info
+      top 30px
+
+  .section_one-description
+    margin-top 15px
+
+  .section_one-title
+    font-size remify(40px)
