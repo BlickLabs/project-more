@@ -49,4 +49,77 @@
       <a href="index.html"><img src="img/logos/more-white-mobile.png" alt="Logo"></a> {# Change #}
     </div>
   </div>
+  <div class="desktop-hide">
+    <a href="index.html">
+      <img class="site-navbar__desktop-logo-top" src="img/logos/more-black.svg" alt="Logo">
+    </a>
+  </div>
+  <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <img src="img/icons/menu-black.svg" alt="Logo" data-attribute="">
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="index.html" data-attribute="">
+          <img class="hamburger-logo" src="img/logos/more-white-mobile1.png" data-attribute="" alt="logo hamburger">
+        </a>
+      </div>
+      <div class="hamburger-close-container" id="hideHamburger">
+        <img class="hamburger-close" src="img/icons/menu-white-mobie.svg">
+      </div>
+    </div>
+    <div class="hamburger-menu-body font-metropolis-medium" data-attribute="">
+      <div class="lang_menu_wrapper lang_menu_desktop"> 
+        <div class="site-lang__menu">
+          <a href="{% if section == 'index-es' %}/{% elif section == 'portfolio-es' %}portfolio.html{% elif section == 'services-es' %}services.html{% elif section == 'careers-es' %}careers.html{% elif section == 'team-es' %}team.html{% elif section == 'referrals-es' %}referrals.html{% elif section == 'quote-es' %}quote.html{% elif section == 'contact-es' %}contact.html{% endif %}" class="site-lang__menu-link font-metropolis-bold"><b>ENG</b></a>
+        </div>
+        <div class="site-lang__menu">
+          <a href="{% if section == 'index' %}index-es.html{% elif section == 'portfolio' %}portfolio-es.html{% elif section == 'services' %}services-es.html{% elif section == 'careers' %}careers-es.html{% elif section == 'team' %}team-es.html{% elif section == 'referrals' %}referrals-es.html{% elif section == 'quote' %}quote-es.html{% elif section == 'contact' %}contact-es.html{% endif %}" class="site-lang__menu-link">ESP</a>
+        </div>
+      </div>
+      <div class="hamburger-text-container {% if section == 'index' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="index.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'index' %} font-metropolis-bold {% endif %}">Home</span>
+        </a>
+      </div>
+      <div class="hamburger-text-container {% if section == 'portfolio' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="portfolio.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'portfolio' %} font-metropolis-bold {% endif %}">Portfolio</span>
+        </a>
+      </div>
+      <div class="hamburger-text-container {% if section == 'services' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="services.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'services' %} font-metropolis-bold {% endif %}">Services</span>
+        </a>
+      </div>
+      <div>
+        <div class="hamburger-separtor"></div>
+      </div>
+      <div class="hamburger-text-container {% if section == 'careers' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="careers.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'careers' %} font-metropolis-bold {% endif %}">Careers</span>
+        </a>
+      </div>
+      <div class="hamburger-text-container {% if section == 'team' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="team.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'team' %} font-metropolis-bold {% endif %}">Team</span>
+        </a>
+      </div>
+      <div class="hamburger-text-container {% if section == 'referrals' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="referrals.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'referrals' %} font-metropolis-bold {% endif %}">Referrals program</span>
+        </a>
+      </div>
+      <div>
+        <div class="hamburger-separtor"></div>
+      </div>
+      <div class="hamburger-text-container {% if section == 'contact' %} link-container-active {% endif %}" data-attribute="">
+        <a data-attribute="" href="contact.html" class="hamburger-option-link">
+          <span class="hamburger-text {% if section == 'contact' %} font-metropolis-bold {% endif %}">Contact</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
