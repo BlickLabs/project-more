@@ -1,5 +1,5 @@
 function showMenu() {
-  document.querySelector('#menuContainer').style.width = '85%';
+  document.querySelector('#menuContainer').style.width = '80%';
   document.querySelector('#hamburgerMenu').style.display = 'none';
 }
 
