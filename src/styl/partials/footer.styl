@@ -11,7 +11,10 @@ footer
   .site-footer__menu-wrapper
     display flex
     color black
-    margin 3rem 0 
+    margin 3rem 0
+
+.site-footer-separator
+  display none
 
 .site-footer__menu-link
   font-size remify(13)
@@ -21,10 +24,11 @@ footer
 
   &.active
     font-weight bold
-    color $darkBlue
+    color #1e1e1e
   
   &:hover
-    color $blueStandar
+    color #1e1e1e
+    font-weight 800
 
 .site-footer-menu-col2
   .site-footer__menu-link:last-child
@@ -41,28 +45,52 @@ footer
   margin-bottom 25px
 
 .footer-email-link
-  margin-bottom 25px
+  margin 10px 0 40px 0
 
 .site-footer__mail
-  font-size remify(16)
+  font-size remify(12)
   color #000
+  letter-spacing 2px
   margin-top 6.5px
 
 .footer-fb-link
   height 20px
 
 .footer-fb-icon
-  height 20px
+  height 17px
   margin-left 10px
   width auto
 
-@media screen and (max-width: 767px) // Change
+@media screen and (max-width: 767px)
+  footer
+    background-image url('../img/backgrounds/footer-background.jpg')
+
+  .site-footer__menu
+    padding 0 40px
+    width 100%
+
+  .site-footer__menu
+    .site-footer__menu-wrapper
+      margin 0
+
   .site-footer__menu
     .site-footer__menu-wrapper
       display flex
       justify-content center
       color #000
-      width calc(100% - (-40px))
+      flex-direction column
+      width 100%
+
+  .site-footer-separator
+    background-color #1e1e1e
+    display block
+    height 1px
+    margin 2em 0
+    width 100%
+
+  .site-footer__menu-link
+    font-size remify(15px)
+    margin-bottom 8px
 
   .site-footer-menu-col2, .site-footer-menu-col1
     display flex
@@ -70,8 +98,27 @@ footer
     .site-footer__menu-link
       padding 5px 15px
   
-  .site-footer-menu-col2
+  .site-footer-menu-col2,
+  .site-footer-menu-col1
     .site-footer__menu-link
       border none
+
+  .site-footer-menu-col2,
+  .site-footer-menu-col1
+      align-items center
+
+  .footer-fb-link
+    margin 10px 0 0 0
+
+  .footer-fb-icon
+    margin-left 0
+
+  .footer-email-link
+    margin-bottom 17px
+
+  .site-footer__mail,
+  .site-footer__menu-copyright
+    font-size remify(15px)
+    letter-spacing 0
   
   
