@@ -1,7 +1,9 @@
 server {
-    listen 80;
-    listen [::]:80;
 
+    listen 80;
+    listen 443 default_server ssl;
+    ssl_certificate  /home/ubuntu/certs/more/getmore_mx_e04e6_d45a3_1541198700_fa164aec7cfac173fbd4b101964d669b.crt;
+    ssl_certificate_key /home/ubuntu/certs/more/e04e6_d45a3_dd05dc0780e60223badfa0845531f30f.key;
     root /home/static/project-more;
     index index.html index.htm;
 
